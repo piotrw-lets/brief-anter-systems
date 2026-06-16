@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brief projektowy — Anter Systems × Let's Automate</title>
+<title>Ankieta przed ofertą — Anter Systems × Let's Automate</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -674,7 +674,7 @@ FORM.addEventListener('submit', async (e)=>{
   const fd=new FormData();
   const d=serialize();
   Object.keys(LABELS).forEach(k=>{ if(d[k]) fd.append(LABELS[k], [].concat(d[k]).join(', ')); });
-  fd.append('_subject', 'Brief projektowy — '+(d['kontakt_firma']||'Anter Systems'));
+  fd.append('_subject', 'Ankieta przed ofertą — '+(d['kontakt_firma']||'Anter Systems'));
   fd.append('Podsumowanie', '\n'+buildPretty());
   fd.append('_captcha','false');
   fd.append('_template','table');
@@ -695,7 +695,7 @@ FORM.addEventListener('submit', async (e)=>{
 /* ---------- mailto fallback ---------- */
 document.getElementById('mailtoBtn').addEventListener('click', ()=>{
   const d=serialize();
-  const subject='Brief projektowy — '+(d['kontakt_firma']||'Anter Systems');
+  const subject='Ankieta przed ofertą — '+(d['kontakt_firma']||'Anter Systems');
   const body=buildPretty();
   window.location.href='mailto:'+RECIPIENT+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
 });
