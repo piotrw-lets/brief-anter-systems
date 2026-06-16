@@ -100,6 +100,7 @@ main{padding:34px 0 72px}
 .section-head h2{font-weight:700;font-size:20px;letter-spacing:-.035em;line-height:1.2;color:var(--ink)}
 .section-head p{font-size:14px;color:var(--muted);margin-top:4px;font-weight:500}
 .pill-opt{display:inline-block;margin-left:8px;font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--accent-deep);background:#00cd7714;border:1px solid #00cd7733;padding:3px 9px;border-radius:100px;vertical-align:middle;text-transform:uppercase}
+.tag-rec{display:inline-block;margin-left:7px;font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--accent-deep);background:#00cd7714;border:1px solid #00cd7733;padding:2px 9px;border-radius:100px;vertical-align:middle;text-transform:uppercase;white-space:nowrap}
 
 /* ===== Question ===== */
 .q{padding:22px 0;border-top:1px solid var(--line-2)}
@@ -287,11 +288,11 @@ footer a{color:var(--accent-deep);text-decoration:none;font-weight:600}
 
     <!-- Q3 -->
     <div class="q" data-q>
-      <label class="q-label" id="lbl-zakres"><span class="q-num">3.</span>Jedna oferta na całość czy podział na etapy?</label>
+      <label class="q-label" id="lbl-zakres"><span class="q-num">3.</span>Jaką formę współpracy (i oferty) Państwo preferują?</label>
       <div class="opts" data-group="zakres" role="radiogroup" aria-labelledby="lbl-zakres">
-        <label class="option"><input type="radio" name="zakres" value="Całość w jednej ofercie"><span class="mark"></span><span class="opt-body"><span class="opt-title">Wycena na całość</span></span></label>
-        <label class="option"><input type="radio" name="zakres" value="Etapami — zaczynamy od najważniejszego"><span class="mark"></span><span class="opt-body"><span class="opt-title">Etapami — zaczynamy od najważniejszego</span></span></label>
-        <label class="option"><input type="radio" name="zakres" value="Jeszcze nie wiemy — zaproponujcie"><span class="mark"></span><span class="opt-body"><span class="opt-title">Jeszcze nie wiemy — zaproponujcie podejście</span></span></label>
+        <label class="option"><input type="radio" name="zakres" value="Fixed price na całość"><span class="mark"></span><span class="opt-body"><span class="opt-title">Fixed price na całość</span><span class="opt-desc">Daje pewność co do ceny od początku, ale wymaga poświęcenia czasu na analizę przed złożeniem oferty.</span></span></label>
+        <label class="option"><input type="radio" name="zakres" value="Fixed price na obszar „na teraz” + estymowane widełki na pozostałe"><span class="mark"></span><span class="opt-body"><span class="opt-title">Fixed price na obszar „na teraz”, estymowane widełki na pozostałe obszary</span><span class="opt-desc">Daje pewność dla priorytetowego obszaru (oraz rząd wielkości dla pozostałych), przy zmniejszeniu nakładu pracy na analizę.</span></span></label>
+        <label class="option"><input type="radio" name="zakres" value="Time &amp; Materials"><span class="mark"></span><span class="opt-body"><span class="opt-title">Time &amp; Materials</span><span class="opt-desc">Współpraca oparta o estymację w widełkach, z rozliczeniem za faktycznie przepracowane godziny. Pozwala na najszybszy start i efektywność kosztową.<span class="tag-rec">rekomendowany</span></span></span></label>
       </div>
     </div>
 
